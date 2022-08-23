@@ -1,0 +1,141 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(img/bg.jpg);
+  background-size: cover;
+}
+
+.header {
+  margin: auto;
+  background-color: white;
+  width: 40%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin-top: -2px;
+}
+
+.input {
+  width: 78%;
+  height: 40px;
+  padding-left: 5px;
+  font-size: 17px;
+  border: 2px solid #838383;
+  border-radius: 5px;
+}
+
+.add {
+  margin-left: 5px;
+  width: 18%;
+  height: 47px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: rgb(27, 97, 255);
+  border-radius: 5px;
+  color: white;
+}
+
+.add:hover {
+  background-color: rgb(83, 134, 253);
+}
+
+.input-section input:focus {
+  outline: none;
+  border-color: rgb(27, 97, 255);
+}
+
+.tasks {
+  width: 40%;
+  padding: 20px;
+  margin: auto;
+  background-color: white;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.task {
+  margin-bottom: 10px;
+  width: 98%;
+  height: 50px;
+  border: 1px solid #767676;
+  border-radius: 5px;
+  padding: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 1px 3px;
+  padding-left: 10px;
+}
+
+.clear {
+  padding: 5px;
+  border: none;
+  background-color: red;
+  font-size: 17px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task.completed {
+  text-decoration: line-through;
+}
+
+.icon {
+  padding: 10px;
+  justify-content: space-between;
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.fa-trash {
+  background-color: rgb(27, 97, 255);
+  margin-right: 4px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fa-trash:hover {
+  background-color: rgb(83, 134, 253);
+}
+
+.fa-pen-to-square {
+  background-color: rgb(27, 97, 255);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.fa-pen-to-square:hover {
+  background-color: rgb(83, 134, 253);
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    width: 80%;
+  }
+
+  .input {
+    width: 70%;
+  }
+
+  .add {
+    margin-left: 2px;
+    width: 24%;
+  }
+
+  .tasks {
+    width: 80%;
+  }
+
+  .icon {
+    padding: 5px;
+    font-size: 15px;
+  }
+}
